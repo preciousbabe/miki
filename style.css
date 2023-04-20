@@ -22,14 +22,14 @@ border: none;
 
 /* hero */
 .hero{
-    background-position:center;
+    background-position:bottom;
     background-repeat: no-repeat;
     background-size:100%;
     background-image: linear-gradient(to right,rgb(254, 254, 254, 1),rgba(48, 76, 248, 0.5)), url(./mikiimage/snowww.png);
 }
 .hero-h1{
-width: 427px;
-height: 186px;
+/* width: 427px; */
+/* height: 186px; */
 font-family: 'Roboto';
 font-style: normal;
 font-weight: 600;
@@ -40,8 +40,8 @@ color: #1D2A91;
 margin-top: 12%;
 }
 .p1{
-width: 420px;
-height: 132px;
+/* width: 420px; */
+/* height: 132px; */
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 500;
@@ -50,7 +50,7 @@ line-height: 183%;
 color: #5E4848;
 }
 .btn1{
-padding: 15px 48px;
+    padding: 10px 62px;
 background: #DD930E;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 border-radius: 72px;
@@ -63,6 +63,7 @@ color: white;
 }
 .hero-img{
     height: 34rem;
+    object-fit: cover;
 }
 .star{   
 position: absolute;
@@ -88,18 +89,18 @@ top: 432px;
 @media(max-width:768px){
     .h1{
         font-size: 45px;
-         width: 130%;
+         /* width: 130%; */
          height: 157px;
          line-height: 144%;
     }
     .p1{
-        width: 302px;
+        /* width: 302px; */
         height: 124px;
         margin-top: -2rem;
     }
     .btn1{
         margin-top:15%;
-        width: 100%;
+        /* width: 100%; */
         text-align: center;
         border-radius: 8px;
     }
