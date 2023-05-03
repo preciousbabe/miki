@@ -16,8 +16,8 @@ img{
         color: #D19500;
     }
 .navbar-toggler{
-    height: 10px;
-    width: 10px;
+    height: 20px;
+    width: 20px;
     position: relative;
     transition: .5s ease-in-out;
 }
@@ -153,6 +153,7 @@ top: 257px;
     font-family: 'Playfair Display';
     letter-spacing: 0.05em;
     line-height: 24px;
+    /* height: 100vh; */
 }
 .big-about-img{
     height:71% ;
@@ -296,7 +297,7 @@ top: 257px;
        }
        .list-link:hover,
        .icon:hover{
-         color: #e03a37;
+         color: #D19500;
        }
        .lines{
          height: 1px;
