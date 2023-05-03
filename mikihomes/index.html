@@ -7,29 +7,43 @@
     <script src="https://kit.fontawesome.com/e6d5545f07.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css"> 
-    <link rel="stylesheet" href="./style.css">  
-</head>
+    <link rel="stylesheet" href="./style.css">
+      <!-- carousel link -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  </head>
   <body>
 
     <!-- navbar -->
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container">
           <a class="navbar-brand" href="./index.html">
-            <img src="../mikiimage/homelogo.png" alt="logo" class="img-fluid w-75 logo">
+            <img src="../mikiimage/mikihomes.png" alt="logo" class="img-fluid logo">
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+          <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
             <span><i class="bi bi-list"></i></span>
-          </button>
+          </button> -->
+          <button class="navbar-toggler collapsed d-flex d-lg-none flex-column justify-content-around" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+            <span class="toggler-icon ml-auto top-bar"></span>
+            <span class="toggler-icon ml-auto middle-bar"></span>
+            <span class="toggler-icon ml-auto bottom-bar"></span>
+        </button>
           <div class="collapse navbar-collapse" id="navmenu">
             <ul class="navbar-nav m-auto">
               <li class="nav-item m-2">
                 <a class="nav-link active" href="#home">Home</a>
               </li>
               <li class="nav-item m-2">
-                <a class="nav-link" href="#about">About us</a>
+                <a class="nav-link" href="#about">Services</a>
               </li>
               <li class="nav-item m-2">
                 <a class="nav-link" href="#gallery">Gallery</a>
+              </li>
+              <li class="nav-item m-2">
+                <a class="nav-link" href="#gallery">Blog</a>
               </li>
               <li class="nav-item m-2">
                 <a class="nav-link" href="#contact">Contact</a>
@@ -62,13 +76,13 @@
             <div class="container">
               <h1 class="h1 text-center my-5">Our Services</h1>
               <div class="row">
-                <div class="col text-center">
+                <div class="col-md-6 col-lg-3 text-center">
                   <div class="service-card p-5">
                     <div class="card-img">
-                      <i class="bi bi-house-heart service-icon"></i>
+                      <i class="fa-sharp fa-solid fa-house service-icon"></i>
                     </div>
                     <div class="service-card-title">
-                      <h3 class="h3">Buy or buy a home</h3>
+                      <h3 class="h3">Buy or Rent a house</h3>
                     </div>
                     <div class="service-card-body">
                       <p class="small">
@@ -78,10 +92,10 @@
                   </div>
                 </div>
 
-                <div class="col text-center">
+                <div class="col-md-6 col-lg-3 text-center">
                   <div class="service-card p-5">
                     <div class="card-img">
-                      <i class="fa-sharp fa-solid fa-hand-holding-dollar service-icon"></i>
+                      <i class="fa-sharp fa-solid fa-landmark service-icon"></i>
                     </div>
                     <div class="service-card-title">
                       <h3 class="h3">Buy a land</h3>
@@ -94,7 +108,7 @@
                   </div>
                 </div>
                           
-                <div class="col text-center">
+                <div class="col-md-6 col-lg-3 text-center">
                   <div class="service-card p-5">
                     <div class="card-img">
                       <i class="fa-sharp fa-solid fa-city service-icon"></i>
@@ -110,10 +124,10 @@
                   </div>
                 </div>
                 
-                <div class="col text-center">
+                <div class="col-md-6 col-lg-3 text-center">
                   <div class="service-card p-5">
                     <div class="card-img">
-                      <i class="bi bi-shield-check service-icon"></i>
+                      <i class="fa-sharp fa-solid fa-shield-halved service-icon"></i>
                     </div>
                     <div class="service-card-title">
                       <h3 class="h3">Extra Security</h3>
@@ -136,292 +150,329 @@
             <div class="row g-3">
               <div class="col-md">
                 <h2 class="h2">Our vision</h2>
-                <p class="small bep">We intend making miki real home your one-stop destination for all things real estate. <a href="#collapse-text" data-bs-toggle="collapse"class="text-danger">See more..</a>
+                <p class="small bep">We intend making miki real home your one-stop destination for all things real estate. <a href="#collapse-text" data-bs-toggle="collapse" class="text-decoration-none">See more..</a>
                   <div id="collapse-text" class="bep small collapse"> Our team of experienced professional is determined in helping you find that perfect house or land for building your home. Sell your property or invest with confidence in real estate with miki real estate. With miki real estste you are sure of transparency, intergrity and personalized services.Lets make your real estate journey a seemless and enjoyable one.</div>  </p>
                 <img src="../mikiimage/real4.jpg" alt="house-img" class="img-fluid">
               </div>
               <div class="col-md">
                 <img src="../mikiimage/real6.jpg" alt="fnld" class="img-fluid">
                 <h2 class="h2">Our Mission</h2>
-                <p class="small bep">We look forward to help you acquire a place that suits your personality, style and standards. <a href="#collapse-text2" data-bs-toggle="collapse"class="text-danger">See more..</a>
+                <p class="small bep">We look forward to help you acquire a place that suits your personality, style and standards. <a href="#collapse-text2" data-bs-toggle="collapse" class="text-decoration-none">See more..</a>
                   <div id="collapse-text2" class="bep small collapse">
                     We ensure that all our clients gain maximum satisfaction in all services recieved from us as we bring to them their dream place. Miki real estate homes is really the right choice to make. 
                   </div>
                 </p>
               </div>
             </div>
-
           </div>
            </section>
              
            <!-- collections -->
           <section class="collection p-md-5">
             <div class="container">
-              <h2 class="h2">Our Best Collection On Sales</h2>
-              <div class="d-flex">
-                <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button class="btnu">View All</button>
-              </div>
+              <h2 class="h2">Best Recommendations.</h2>
               <div class="row">
-                <div class="col-md-12 col-lg-4">
-                <div class="card">
-                  <img src="../mikiimage/real1.jpg" class="card-img-top" alt="...">
-                  <div class="card-body col-md">
-                    <h5 class="card-title">Chestnut Valley.</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at sunt atque.</p>
-                    <div class="d-md-flex justify-content-flex-end ml-auto">
-                    <a href="#">View Details</a>
+                <div class="col-lg">
+                  <div class="card p-3"> 
+                  <div class="collection-card-img">
+                    <img src="../mikiimage/real2.jpg" alt="house-img">
+                    <p class="smally">for rent</p>
+                  </div>
+                  <div class="collection-card-body">
+                    <h5 class="h5">Six Bedroom Flat</h5>
+                    <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
+                  </div>
+                  </div>
+                </div>
+                
+                <!-- modalsectionn -->
+                <div class="modal fade" id="details">
+                  <div class="modal-dialog modal-dialog-centered">
+                    <div class="modal-content">
+                    <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body collection-info bg-light">
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-bed "></i>
+                        <span class="m-2">Six bedrooms</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-toilet"></i>
+                        <span class="m-2">Two toilet</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-person-swimming"></i>
+                        <span class="m-2">Swimming Pool</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-tags"></i>
+                        <span class="m-2">$24.8 monthly</span>
+                      </div>
+                      <div class="d-flex align-items-center">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span class="m-2">No.56 Eziukwu ave. by longife hospital,ikeja Lagos State.</span>
+                      </div>
+                    </div>    
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-primary" data-bs-target="#agent-info" data-bs-toggle="modal">Contact Agent</button>
                     </div>
                   </div>
                   </div>
                 </div>
-                <div class="col-md-12 col-lg-4">
-                  <div class="card ">
-                    <img src="../mikiimage/real1.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Chestnut Valley.</h5>
-                      <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at sunt atque.</p>
-                      <div class="d-flex justify-content-flex-end ml-auto">
-                      <a href="#">View Details</a>
+                  <!-- second moda -->
+                  <div class="modal fade" id="agent-info">
+                    <div class="modal-dialog modal-dialog-centered">
+                      <div class="modal-content">
+                      <div class="modal-header">
+                      <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                       </div>
+                      <div class="modal-body">
+                        <input type="text" class="form-control mb-3" placeholder="Enter username">
+                        <input type="text" class="form-control" placeholder="Mobile number">
+                      </div>
+                      <div class="modal-footer">
+                        <button class="btn btn-secondary" data-bs-dismiss="modal">Submit</button>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+
+
+                  <div class="col-lg">
+                    <div class="card p-3">
+                    <div class="collection-card-img">
+                      <img src="../mikiimage/real8.jpg" alt="house-img">
+                      <p class="smally">for sale</p>
+                    </div>
+                    <div class="collection-card-body">
+                      <h5 class="h5">Three Bedroom Flat</h5>
+                      <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
                     </div>
                     </div>
                   </div>
-                  <div class="col-md-12 col-lg-4">
-                    <div class="card">
-                      <img src="../mikiimage/real1.jpg" class="card-img-top" alt="...">
-                      <div class="card-body">
-                        <h5 class="card-title">Chestnut Valley.</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis at sunt atque.</p>
-                        <div class="d-flex justify-content-flex-end ml-auto">
-                        <a href="#">View Details</a>
-                        </div>
-                      </div>
-                      </div>
+
+                  <div class="col-lg">
+                    <div class="card p-3">
+                    <div class="collection-card-img">
+                      <img src="../mikiimage/real5.jpg" alt="house-img">
+                      <p class="smally">for sale</p>
                     </div>
+                    <div class="collection-card-body">
+                      <h5 class="h5">Brick House</h5>
+                      <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  <div class="col-lg">
+                    <div class="card p-3">
+                    <div class="collection-card-img">
+                      <img src="../mikiimage/real1.jpg" alt="house-img">
+                      <p class="smally">for rent</p>
+                    </div>
+                    <div class="collection-card-body">
+                      <h5 class="h5">Country Home</h5>
+                      <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
+                    </div>
+                    </div>
+                  </div>
+
+                  </div>
+                  </div>
+                </div>
+              </div>
+              <div class="collection-footer">
+                <button class="btn btn-secondary secondary mt-2"> <a href="#more-collection" data-bs-toggle="collapse" class="text-light"> See More</a></button>
               </div>
             </div>
+           <!-- hidden collcetion section -->
+           <div class="row collapse" id="more-collection">
+            <div class="col-lg">
+              <div class="card p-3">
+              <div class="collection-card-img">
+                <img src="../mikiimage/real1.jpg" alt="house-img">
+              </div>
+              <div class="collection-card-body">
+                <h5 class="h5">Country Home</h5>
+                <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card p-3">
+              <div class="collection-card-img">
+                <img src="../mikiimage/real1.jpg" alt="house-img">
+              </div>
+              <div class="collection-card-body">
+                <h5 class="h5">Country Home</h5>
+                <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
+              </div>
+              </div>
+            </div>
+            <div class="col-lg">
+              <div class="card p-3">
+              <div class="collection-card-img">
+                <img src="../mikiimage/real1.jpg" alt="house-img">
+              </div>
+              <div class="collection-card-body">
+                <h5 class="h5">Country Home</h5>
+                <button type="button" class="btn collection-details" data-bs-toggle="modal" data-bs-target="#details">View Details</button>
+              </div>
+              </div>
+            </div>
+           </div>
+           <!-- endddd -->
           </section>
 
-          <section class="customers p-md-4">
+
+          <!-- customers section -->
+
+          <section class="gallary " id="gallary">
             <div class="container">
-              <p class="lead text-light w-md-50 testimony">See What Our Customers Said About Us</p>
+                  <h2>See What Our Customers Are Saying About US!</h2>   
+              <div class="owl-carousel owl-theme">
+                <div class="item">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="small">Miki Real Estate homes is very efficient and sincere in service rendering, of a truth its indeed one of the best real estates in Nigeria.</p>
+                  <div class="row">
+                    <div class="col">
+                      <img src="../mikiimage/smile1.jpg" alt="" class="img-fluid small-img">
+                    </div>
+                    <div class="col ">
+                    <p class="small" style="font-weight:600;">Laural Jones <br><span style="color:#3a8dbc">Writer</span></p>
+                  </div>
+                  </div>
+                </div>
+                  <div class="item">
+                    <i class="fa-solid fa-quote-left"></i>
+                    <p class="small">Miki real estate home is amazing they assissted me till i was able to get a good home of my choice and am deeply grateful to them for such wonderful services.</p>
+                    <div class="row">
+                      <div class="col">
+                        <img src="../mikiimage/smile1.jpg" alt="" class="img-fluid small-img">
+                      </div>
+                      <div class="col ">
+                      <p class="small" style="font-weight:600;">Laural Jones <br><span style="color:#3a8dbc">Writer</span></p>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                  <i class="fa-solid fa-quote-left"></i>
+                  <p class="small">Miki real estate home is amazing they assissted me till i was able to get a good home of my choice and am deeply grateful to them for such wonderful services.</p>
+                  <div class="row">
+                    <div class="col">
+                      <img src="../mikiimage/smile1.jpg" alt="" class="img-fluid small-img">
+                    </div>
+                    <div class="col ">
+                    <p class="small" style="font-weight:600;">Laural Jones <br><span style="color:#3a8dbc">Writer</span></p>
+                  </div>
+                  </div>
+              </div>
+              <div class="item">
+                <i class="fa-solid fa-quote-left"></i>
+                <p class="small">Miki Real Estate homes is very efficient and sincere in service rendering, of a truth its indeed one of the best real estates in Nigeria.</p>
+                <div class="row">
+                  <div class="col">
+                    <img src="../mikiimage/smile1.jpg" alt="" class="img-fluid small-img">
+                  </div>
+                  <div class="col ">
+                  <p class="small" style="font-weight:600;">Laural Jones <br><span style="color:#3a8dbc">Writer</span></p>
+                </div>
+                </div>
+                </div>
+            <div class="item">
+              <i class="fa-solid fa-quote-left"></i>
+              <p class="small">Miki real estate home is amazing they assissted me till i was able to get a good home of my choice and am deeply grateful to them for such wonderful services.</p>
               <div class="row">
-                <div id="carouselExampleControls" class="carousel slide carousel-dark" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                      <div class="card-wrapper">
-                        <div class="cardr bg-light p-5">
-                          <i class="bi bi-quote"></i>
-                          <div class="card-body">
-                          <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="row">
-                          <div class="col">
-                            <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                          </div>
-                          <div class="col">
-                            <h6 class="h6">Bessie Coper</h6>
-                            <p class="small text-primary">Master Card</p>
-                          </div>
-                        </div>
-                    </div>
-                  </div> 
-
-                  <div class="cardr bg-light p-5">
-                    <i class="bi bi-quote"></i>
-                    <div class="card-body">
-                    <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="row">
-                    <div class="col">
-                      <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                    </div>
-                    <div class="col">
-                      <h6 class="h6">Bessie Coper</h6>
-                      <p class="small text-primary">Master Card</p>
-                    </div>
-                  </div>
-              </div>
-            </div> 
-
-            <div class="cardr bg-light p-5">
-                  <i class="bi bi-quote"></i>
-                  <div class="card-body">
-                  <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="row">
-                  <div class="col">
-                    <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                  </div>
-                  <div class="col">
-                    <h6 class="h6">Bessie Coper</h6>
-                    <p class="small text-primary">Master Card</p>
-                  </div>
+                <div class="col">
+                  <img src="../mikiimage/smile1.jpg" alt="" class="img-fluid small-img">
                 </div>
-                    </div>
-                  </div> 
-                </div>
-              </div> 
-
-                     
-                    <div class="carousel-item">
-                      <div class="card-wrapper">
-                        <div class="cardr bg-light p-5">
-                          <i class="bi bi-quote"></i>
-                          <div class="card-body">
-                          <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="row">
-                          <div class="col">
-                            <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                          </div>
-                          <div class="col">
-                            <h6 class="h6">Bessie Coper</h6>
-                            <p class="small text-primary">Master Card</p>
-                          </div>
-                        </div>
-                    </div>
-                  </div> 
-
-                  <div class="cardr bg-light p-5">
-                    <i class="bi bi-quote"></i>
-                    <div class="card-body">
-                    <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="row">
-                    <div class="col">
-                      <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                    </div>
-                    <div class="col">
-                      <h6 class="h6">Bessie Coper</h6>
-                      <p class="small text-primary">Master Card</p>
-                    </div>
-                  </div>
-              </div>
-            </div> 
-
-            <div class="cardr bg-light p-5">
-                  <i class="bi bi-quote"></i>
-                  <div class="card-body">
-                  <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="row">
-                  <div class="col">
-                    <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                  </div>
-                  <div class="col">
-                    <h6 class="h6">Bessie Coper</h6>
-                    <p class="small text-primary">Master Card</p>
-                  </div>
-                </div>
-                    </div>
-                  </div> 
-                </div>
-                    </div>
-
-
-
-                    <div class="carousel-item">
-                      <div class="card-wrapper">
-                        <div class="cardr bg-light p-5">
-                          <i class="bi bi-quote"></i>
-                          <div class="card-body">
-                          <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                        <div class="row">
-                          <div class="col">
-                            <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                          </div>
-                          <div class="col">
-                            <h6 class="h6">Bessie Coper</h6>
-                            <p class="small text-primary">Master Card</p>
-                          </div>
-                        </div>
-                    </div>
-                  </div> 
-
-                  <div class="cardr bg-light p-5">
-                    <i class="bi bi-quote"></i>
-                    <div class="card-body">
-                    <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                  <div class="row">
-                    <div class="col">
-                      <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                    </div>
-                    <div class="col">
-                      <h6 class="h6">Bessie Coper</h6>
-                      <p class="small text-primary">Master Card</p>
-                    </div>
-                  </div>
-              </div>
-            </div> 
-
-            <div class="cardr bg-light p-5">
-                  <i class="bi bi-quote"></i>
-                  <div class="card-body">
-                  <p class="card-text">Some quick example tryn thr emzk zmldsvm smileenc text to build on the card title and make up the bulk of the card's content.</p>
-                <div class="row">
-                  <div class="col">
-                    <img src="../mikiimage/smile1.jpg" alt="" class="small-img">
-                  </div>
-                  <div class="col">
-                    <h6 class="h6">Bessie Coper</h6>
-                    <p class="small text-primary">Master Card</p>
-                  </div>
-                </div>
-                    </div>
-                  </div> 
-                </div>
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
+                <div class="col ">
+                <p class="small" style="font-weight:600;">Laural Jones <br><span style="color:#3a8dbc">Writer</span></p>
               </div>
               </div>
+          </div>
+          </div>
+            </div>
+          </section>
+    
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+          referrerpolicy="no-referrer"></script>
+
+           <!-- contact us -->
+           <section class="contact py-3">
+            <div class="container">
+              <h1 class="h2 text-center">Get In Touch</h1>
+              <p class="small text-center"><span class="m-2"><i class="bi bi-telephone"></i></span>Phone +234 897 6546 786</p>
+              <p class="small text-center"><span class="m-2"><i class="bi bi-envelope"></i></span>Email Mikikonceptworld@gmail.com</p>
+              <p class="small text-center"><span class="m-2"><i class="bi bi-geo-alt">Address No.10 calabar street by eziukwu road, Aba.</i></span></p>
+            <div class="row">
+              <div class="col-lg">
+              <form action="get" class="form">
+                  <input type="text" class="form-control mb-4" placeholder="Your Name">
+                  <input type="text" class="form-control mb-4" placeholder="Your Email">
+                  <input type="text" class="form-control mb-4" placeholder="Your Phone">
+                </form>
+                </div>
+                <div class="col-lg">
+                  <textarea class="w-100 h-100 textarea p-3" placeholder="Your Message &rarr;"></textarea>
+                </div>
+            </div>
             </div>
           </section>
 
           <!-- footer section -->
-            <footer class="footer">
+            <footer class="footer py-3">
               <div class="container">
                 <div class="row">
-                  <div class="col-md">
-                    <img src="../mikiimage/homelogo.png" alt="" class="img-fluid footer-logo">
-                    <p class="small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis dolores adipisci quo autem rem nihil cupiditate fugit vel tempore provident?</p>
+                  <div class="col-lg-1 footer-logo m-auto">
+                    <img src="../mikiimage/mikihomes.png" alt="" class="img-fluid">
                   </div>
-                  <div class="col-md">
-                    <h4 class="h4">Useful Links</h4>
+                  <div class="col-lg-6">
+                    <p class="small mt-2 text-md-center">Stay updated with our newsletter to get the latest offers</p>
+                    <div class="d-flex">
+                      <input type="text" class="form-control footer-input" placeholder="search category">
+                         <button class="footer-btn">Subscribe</button>
+                    </div>
+                  </div>
+                  <div class="col-lg-3">
                     <ul class="footer-list">
+                    <h5 class="h5 ms-auto mt-3">Useful Links</h5>
                       <li class="list-item">
-                        <a href="#" class="list-link">Listing</a>
+                        <a href="#" class="list-link">About Us </a>
                       </li>
                       <li class="list-item">
-                        <a href="#" class="list-link">About Us</a>
+                        <a href="#" class="list-link">FAQs</a>
                       </li>
                       <li class="list-item">
-                        <a href="#" class="list-link">Contact Us</a>
+                        <a href="#" class="list-link">Privacy Policies</a>
                       </li>
                       <li class="list-item">
-                        <a href="#" class="list-link">Our Team</a>
+                        <a href="#" class="list-link">Terms & conditions</a>
                       </li>
                     </ul>
                   </div>
-                  <div class="col-md">
-                    <p class="h3">Get In Touch</p>
-                      <p class="small"><span class="footer-icon"><i class="bi bi-geo-alt"></i></span>No.1 dont be silly road,Aba</p>
-                    <p class="small"><span class="footer-icon"><i class="bi bi-telephone"></i></span>+234 807 4321 334</p>
-                    <p class="small"><span class="footer-icon"><i class="bi bi-envelope"></i></span>hello@mikihomes.gmail.com</p>
+                  <div class="col-lg-2 col-sm-12">
+                    <h6 class="h6">Connect With Us</h6>
+                      <span class="socio-icons"><i class="m-2 fs-5 icon bi bi-twitter"></i></span>
+                      <span class="socio-icons"><i class="m-2 fs-5 icon bi bi-facebook"></i></span>
+                      <span class="socio-icons"><i class="m-2 fs-5 icon bi bi-instagram"></i></span>
+                      <span class="socio-icons"><i class="m-2 fs-5 icon bi bi-whatsapp"></i></span>
                   </div>
-                   <div class="col-md">
-                    <h4 class="h4">NewsLetter</h4>
-                    <input type="email" placeholder="Email" class="form-control mb-3">
-                    <button class="btn bg-primary text-light form-control">Submit</button>
-                   </div>
+                </div>
+                <div class="row">
+                  <div class="d-md-flex justify-content-center">
+                    <div class="lines"></div>
+                    <p class="small mx-2">&copy; 2023 miki estate. All rights reserved.</p>
+                       <div class="lines"></div>
+                  </div>
                 </div>
               </div>
             </footer>
-
+             <script src="./script2.js"></script>
            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>
