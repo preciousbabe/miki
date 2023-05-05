@@ -16,8 +16,8 @@ img{
         color: #D19500;
     }
 .navbar-toggler{
-    height: 20px;
-    width: 20px;
+    height: 40px;
+    width: 40px;
     position: relative;
     transition: .5s ease-in-out;
 }

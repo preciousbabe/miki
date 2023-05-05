@@ -5,8 +5,8 @@
     width: 4rem;
     }
 .navbar-toggler{
-    height: 15px;
-    width: 15px;
+    height: 40px;
+    width: 40px;
     position: relative;
     transition: .5s ease-in-out;
 }
