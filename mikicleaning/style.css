@@ -109,6 +109,14 @@
   background: #179A00;
   border-radius: 12px;
   }
+  .btn1 a{
+    color: #ffffff;
+    text-decoration: none;
+  }
+  .btn1:hover{
+    background-color: #0b4b06;
+    transition: all .3s ease-in;
+  }
 /* info section */
 .info-section{
   background-color: #179a00e3;
@@ -167,6 +175,10 @@
   line-height: 26px;
   letter-spacing: 0.0;
 }
+/* contact */
+  .contact{
+    background-image: linear-gradient(to right,rgba(173, 219, 152, 0.808),rgba(230, 230, 238, 0.849)), url(../mikiimage/bnv.webp);
+  }
 
 /* footer */
 
