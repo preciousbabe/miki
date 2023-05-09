@@ -252,8 +252,8 @@
       margin: 0;
     }
     .hero-write-up1{
-     font-size: 40px;
-     line-height: 68px;
+     font-size: 35px;
+     line-height: 60px;
      font-family: 'rubik';
    }
    .hero-write-up2{
@@ -266,7 +266,7 @@
    } 
     .btn1{
      width: 80%;
-     margin: 29px auto;
+     margin: 42px auto;
      border-radius: 4px;
    } 
    .footer-logo img{

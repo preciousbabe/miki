@@ -136,8 +136,34 @@ font-weight: 500;
 .at-box h6{
   color: #0E034F;
 }
+/* installation */
+.install{
+  background-color: rgba(238, 250, 215, 0.856);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media(max-width:768px){
+  .hero{
+    padding-block:3rem;
+  }
   .hero-write-up1{
    font-size: 40px;
    line-height: 68px;
@@ -154,7 +180,7 @@ font-weight: 500;
   margin: 20px auto 10px;
 } 
 /* attributes */
-.at-box:not(:first-child){
+.at-box{
   margin-block:.5rem;
 }
 .at-box:nth-child(2){
